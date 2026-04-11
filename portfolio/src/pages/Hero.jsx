@@ -1,6 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { Download, ArrowRight } from 'lucide-react';
+import profileImg from "../assets/image.jpg";
 export function HeroSection() {
   return (
     <section
@@ -29,7 +30,7 @@ export function HeroSection() {
           
           <div className="w-32 h-32 md:w-40 md:h-40 rounded-full p-1 bg-gradient-to-tr from-emerald-400 to-cyan-400">
             <img
-              src="../pages/image.jpg"
+              src={profileImg}
               alt="Hansi Tharaki"
               className="w-full h-full rounded-full object-cover border-4 border-slate-950" />
             

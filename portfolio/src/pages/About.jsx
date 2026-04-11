@@ -9,7 +9,7 @@ export function AboutSection() {
   },
   {
     label: 'Projects Completed',
-    value: '15+'
+    value: '8+'
   },
   {
     label: 'Technologies',
