@@ -47,7 +47,6 @@ export default function Navbar() {
           <span className="text-emerald-400 ml-2 font-mono">/&gt;</span>
         </a>
 
-        {/* Desktop Nav */}
         <nav className="hidden md:flex items-center gap-8">
           {navLinks.map((link) =>
           <a
@@ -66,7 +65,7 @@ export default function Navbar() {
           </a>
         </nav>
 
-        {/* Mobile Menu Toggle */}
+      
         <button
           className="md:hidden text-slate-300 hover:text-white z-50"
           onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
@@ -75,7 +74,7 @@ export default function Navbar() {
           {isMobileMenuOpen ? <XIcon size={24} /> : <MenuIcon size={24} />}
         </button>
 
-        {/* Mobile Nav Drawer */}
+      
         <AnimatePresence>
           {isMobileMenuOpen &&
           <motion.div

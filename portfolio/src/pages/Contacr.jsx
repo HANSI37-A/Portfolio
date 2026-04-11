@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
-import { Mail, MapPin } from 'lucide-react';
-import { FaGithub, FaLinkedin, FaTwitter } from 'react-icons/fa';
+import { Mail, MapPin, Phone } from 'lucide-react';
+import { FaGithub, FaInstagram, FaLinkedin, FaTwitter } from 'react-icons/fa';
 export function ContactSection() {
   const [formData, setFormData] = useState({
     name: '',
@@ -94,13 +94,26 @@ export function ContactSection() {
               <div>
                 <h3 className="text-white font-semibold mb-1">Email</h3>
                 <a
-                  href="mailto:hello@example.com"
+                  href="mailto:tharaki115h@gmail.com"
                   className="text-slate-400 hover:text-emerald-400 transition-colors">
                   
-                  hello@example.com
+                  tharaki115h@gmail.com
                 </a>
+
               </div>
             </div>
+
+              <div className="flex items-start gap-4">
+              <div className="w-12 h-12 rounded-xl bg-slate-900 border border-slate-800 flex items-center justify-center text-emerald-400 shrink-0">
+                <Phone size={24} />
+              </div>
+
+               <div>
+                <h3 className="text-white font-semibold mb-1">Phone</h3>
+                <p className="text-slate-400">+94 71 480 9039</p>
+              </div>
+            </div>
+             
 
             <div className="flex items-start gap-4">
               <div className="w-12 h-12 rounded-xl bg-slate-900 border border-slate-800 flex items-center justify-center text-emerald-400 shrink-0">
@@ -108,7 +121,7 @@ export function ContactSection() {
               </div>
               <div>
                 <h3 className="text-white font-semibold mb-1">Location</h3>
-                <p className="text-slate-400">Kelaniya, Sri Lanka</p>
+                <p className="text-slate-400">Walasmulla, Sri Lanka</p>
               </div>
             </div>
 
@@ -116,28 +129,28 @@ export function ContactSection() {
               <h3 className="text-white font-semibold mb-4">Social Profiles</h3>
               <div className="flex gap-4">
                 <a
-                  href="#"
+                  href="https://github.com/HANSI37-A"
                   className="w-10 h-10 rounded-full bg-slate-900 border border-slate-800 flex items-center justify-center text-slate-400 hover:text-emerald-400 hover:border-emerald-500/30 transition-all">
                   
                   <FaGithub size={20} />
                 </a>
                 <a
-                  href="#"
+                  href="https://www.linkedin.com/in/hansi-tharaki-0a177031a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
                   className="w-10 h-10 rounded-full bg-slate-900 border border-slate-800 flex items-center justify-center text-slate-400 hover:text-emerald-400 hover:border-emerald-500/30 transition-all">
                   
                   <FaLinkedin size={20} />
                 </a>
                 <a
-                  href="#"
+                  href="https://www.instagram.com/hansitharaki?igsh=cGhodjVqcmE5Njk="
                   className="w-10 h-10 rounded-full bg-slate-900 border border-slate-800 flex items-center justify-center text-slate-400 hover:text-emerald-400 hover:border-emerald-500/30 transition-all">
                   
-                  <FaTwitter size={20} />
+                  <FaInstagram size={20} />
                 </a>
               </div>
             </div>
           </motion.div>
 
-          {/* Contact Form */}
+          
           <motion.div
             initial={{
               opacity: 0,

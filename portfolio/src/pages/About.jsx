@@ -71,7 +71,7 @@ export function AboutSection() {
             <p>
               Currently, I'm focusing on building accessible, inclusive products
               and digital experiences. I enjoy bridging the gap between
-              engineering and design — combining my technical knowledge with a
+              engineering and design - combining my technical knowledge with a
               keen eye for aesthetics to create beautiful, performant
               applications.
             </p>
@@ -140,7 +140,7 @@ export function AboutSection() {
                       Backend
                     </h3>
                     <p className="text-slate-400 text-sm">
-                      Node.js, Python, Go
+                      Node.js, Python
                     </p>
                   </div>
                 </div>
@@ -154,7 +154,7 @@ export function AboutSection() {
                       Database
                     </h3>
                     <p className="text-slate-400 text-sm">
-                      PostgreSQL, MongoDB
+                      MySQL, MongoDB
                     </p>
                   </div>
                 </div>
