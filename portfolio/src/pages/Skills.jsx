@@ -1,29 +1,58 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-const skillCategories = [
-{
-  title: 'Frontend',
-  skills: [
-  'React',
-  'TypeScript',
-  'Tailwind CSS',
-  'Next.js',
-  'Framer Motion',
-  'HTML/CSS']
+import { 
+  FaReact, FaHtml5, FaNodeJs, FaPython, 
+  FaDocker, FaAws, FaFigma, FaLinux, FaGitAlt, FaServer 
+} from 'react-icons/fa';
+import { 
+  SiTypescript, SiTailwindcss, SiNextdotjs, SiFramer, 
+  SiExpress, SiGraphql, SiMongodb, SiPostgresql, 
+  SiRedis, SiPrisma, SiJest 
+} from 'react-icons/si';
 
-},
-{
-  title: 'Backend',
-  skills: ['Node.js', 'Express', 'Python', 'REST APIs', 'GraphQL']
-},
-{
-  title: 'Database',
-  skills: ['MongoDB', 'PostgreSQL', 'Redis', 'Prisma ORM']
-},
-{
-  title: 'Tools & Others',
-  skills: ['Git', 'Docker', 'AWS', 'Figma', 'Jest', 'Linux']
-}];
+const skillCategories = [
+  {
+    title: 'Frontend',
+    skills: [
+      { name: 'React', icon: FaReact },
+      { name: 'TypeScript', icon: SiTypescript },
+      { name: 'Tailwind CSS', icon: SiTailwindcss },
+      { name: 'Next.js', icon: SiNextdotjs },
+      { name: 'Framer Motion', icon: SiFramer },
+      { name: 'HTML/CSS', icon: FaHtml5 }
+    ]
+  },
+  {
+    title: 'Backend',
+    skills: [
+      { name: 'Node.js', icon: FaNodeJs },
+      { name: 'Express', icon: SiExpress },
+      { name: 'Python', icon: FaPython },
+      { name: 'REST APIs', icon: FaServer },
+      { name: 'GraphQL', icon: SiGraphql }
+    ]
+  },
+  {
+    title: 'Database',
+    skills: [
+      { name: 'MongoDB', icon: SiMongodb },
+      { name: 'PostgreSQL', icon: SiPostgresql },
+      { name: 'Redis', icon: SiRedis },
+      { name: 'Prisma ORM', icon: SiPrisma }
+    ]
+  },
+  {
+    title: 'Tools & Others',
+    skills: [
+      { name: 'Git', icon: FaGitAlt },
+      { name: 'Docker', icon: FaDocker },
+      { name: 'AWS', icon: FaAws },
+      { name: 'Figma', icon: FaFigma },
+      { name: 'Jest', icon: SiJest },
+      { name: 'Linux', icon: FaLinux }
+    ]
+  }
+];
 
 const containerVariants = {
   hidden: {
@@ -118,15 +147,35 @@ export function SkillsSection() {
               }}
               className="flex flex-wrap gap-3">
               
-                {category.skills.map((skill) =>
-              <motion.span
-                key={skill}
-                variants={itemVariants}
-                className="px-3 py-1.5 bg-slate-950 border border-slate-800 rounded-lg text-sm text-slate-300 hover:text-emerald-400 hover:border-emerald-500/30 transition-colors cursor-default">
-                
-                    {skill}
+                {category.skills.map((skill) => (
+                  <motion.span
+                    key={skill.name}
+                    variants={itemVariants}
+                    whileHover="hover"
+                    className="flex items-center gap-2 px-3 py-1.5 bg-slate-950 border border-slate-800 rounded-lg text-sm text-slate-300 hover:text-emerald-400 hover:border-emerald-500/30 transition-colors cursor-default"
+                  >
+                    <motion.div
+                      variants={{
+                        hover: {
+                          scale: 1.2,
+                          rotate: 10,
+                          transition: { type: "spring", stiffness: 300, damping: 10 }
+                        }
+                      }}
+                      animate={{
+                        y: [-2, 2, -2]
+                      }}
+                      transition={{
+                        duration: 3,
+                        repeat: Infinity,
+                        ease: "easeInOut"
+                      }}
+                    >
+                      <skill.icon className="text-lg" />
+                    </motion.div>
+                    {skill.name}
                   </motion.span>
-              )}
+                ))}
               </motion.div>
             </motion.div>
           )}
