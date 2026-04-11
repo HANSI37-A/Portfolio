@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { Mail, MapPin, Phone } from 'lucide-react';
-import { FaGithub, FaInstagram, FaLinkedin, FaTwitter } from 'react-icons/fa';
+import { FaGithub, FaInstagram, FaLinkedin } from 'react-icons/fa';
 export function ContactSection() {
   const [formData, setFormData] = useState({
     name: '',
@@ -129,19 +129,20 @@ export function ContactSection() {
               <h3 className="text-white font-semibold mb-4">Social Profiles</h3>
               <div className="flex gap-4">
                 <a
-                  href="https://github.com/HANSI37-A"
+                  href="https://github.com/HANSI37-A" target="_blank" rel="noopener noreferrer"
                   className="w-10 h-10 rounded-full bg-slate-900 border border-slate-800 flex items-center justify-center text-slate-400 hover:text-emerald-400 hover:border-emerald-500/30 transition-all">
                   
                   <FaGithub size={20} />
                 </a>
                 <a
                   href="https://www.linkedin.com/in/hansi-tharaki-0a177031a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+                  target="_blank" rel="noopener noreferrer"
                   className="w-10 h-10 rounded-full bg-slate-900 border border-slate-800 flex items-center justify-center text-slate-400 hover:text-emerald-400 hover:border-emerald-500/30 transition-all">
                   
                   <FaLinkedin size={20} />
                 </a>
                 <a
-                  href="https://www.instagram.com/hansitharaki?igsh=cGhodjVqcmE5Njk="
+                  href="https://www.instagram.com/hansitharaki?igsh=cGhodjVqcmE5Njk=" target="_blank" rel="noopener noreferrer"
                   className="w-10 h-10 rounded-full bg-slate-900 border border-slate-800 flex items-center justify-center text-slate-400 hover:text-emerald-400 hover:border-emerald-500/30 transition-all">
                   
                   <FaInstagram size={20} />
@@ -170,7 +171,7 @@ export function ContactSection() {
             className="lg:col-span-3">
             
             <form
-              onSubmit={handleSubmit}
+              onSubmit={handleSubmit} autoComplete='on'
               className="space-y-6 bg-slate-900 p-8 rounded-2xl border border-slate-800">
               
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -185,6 +186,7 @@ export function ContactSection() {
                     type="text"
                     id="name"
                     name="name"
+                    autoComplete="name"
                     required
                     value={formData.name}
                     onChange={handleChange}
@@ -203,6 +205,7 @@ export function ContactSection() {
                     type="email"
                     id="email"
                     name="email"
+                    autoComplete="email"
                     required
                     value={formData.email}
                     onChange={handleChange}
@@ -223,6 +226,7 @@ export function ContactSection() {
                   type="text"
                   id="subject"
                   name="subject"
+                  autoComplete="off"
                   required
                   value={formData.subject}
                   onChange={handleChange}
@@ -241,6 +245,7 @@ export function ContactSection() {
                 <textarea
                   id="message"
                   name="message"
+                  autoComplete="off"
                   required
                   rows={5}
                   value={formData.message}
@@ -257,8 +262,8 @@ export function ContactSection() {
                 
                 {isSubmitting ?
                 <span className="w-5 h-5 border-2 border-slate-950 border-t-transparent rounded-full animate-spin" /> :
-                isSubmitted ?
-                'Message Sent!' :
+                isSubmitted ? "Sending..."
+                  :
 
                 'Send Message'
                 }

@@ -7,7 +7,7 @@ export function HeroSection() {
       id="home"
       className="relative min-h-screen flex items-center justify-center pt-20 overflow-hidden">
       
-      {/* Background Effects */}
+      
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-slate-900 via-slate-950 to-slate-950 -z-10" />
       <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-emerald-500/10 rounded-full blur-[120px] -z-10" />
       <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-cyan-500/10 rounded-full blur-[120px] -z-10" />
@@ -29,7 +29,7 @@ export function HeroSection() {
           
           <div className="w-32 h-32 md:w-40 md:h-40 rounded-full p-1 bg-gradient-to-tr from-emerald-400 to-cyan-400">
             <img
-              src="/WhatsApp_Image_2025-05-16_at_16.46.39_2ea74fe4.jpg"
+              src="../pages/image.jpg"
               alt="Hansi Tharaki"
               className="w-full h-full rounded-full object-cover border-4 border-slate-950" />
             

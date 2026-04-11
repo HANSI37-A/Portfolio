@@ -16,22 +16,28 @@ export function Footer() {
 
         <div className="flex items-center gap-6 text-sm text-slate-500">
           <a
-            href="https://github.com"
-            className="hover:text-emerald-400 transition-colors">
+            href="https://github.com/HANSI37-A"
+            className="hover:text-emerald-400 transition-colors"
+            target="_blank"
+            rel="noopener noreferrer">
             
             GitHub
           </a>
           <a
-            href="https://linkedin.com"
-            className="hover:text-emerald-400 transition-colors">
+            href="https://www.linkedin.com/in/hansi-tharaki-0a177031a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+            className="hover:text-emerald-400 transition-colors"
+            target="_blank"
+            rel="noopener noreferrer">
             
             LinkedIn
           </a>
           <a
-            href="https://twitter.com"
-            className="hover:text-emerald-400 transition-colors">
+            href="https://www.instagram.com/hansitharaki?igsh=cGhodjVqcmE5Njk="
+            className="hover:text-emerald-400 transition-colors"
+            target="_blank"
+            rel="noopener noreferrer">
             
-            Twitter
+            Instagram
           </a>
         </div>
 
