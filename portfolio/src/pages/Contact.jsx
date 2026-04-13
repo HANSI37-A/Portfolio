@@ -9,8 +9,7 @@ export function ContactSection() {
     subject: '',
     message: ''
   });
-  const [isSubmitting, setIsSubmitting] = useState(false);
-  const [isSubmitted, setIsSubmitted] = useState(false);
+
   const handleChange = (e) =>
   {
     setFormData({
@@ -18,22 +17,7 @@ export function ContactSection() {
       [e.target.name]: e.target.value
     });
   };
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    setIsSubmitting(true);
-    // Simulate API call
-    setTimeout(() => {
-      setIsSubmitting(false);
-      setIsSubmitted(true);
-      setFormData({
-        name: '',
-        email: '',
-        subject: '',
-        message: ''
-      });
-      setTimeout(() => setIsSubmitted(false), 5000);
-    }, 1500);
-  };
+
   return (
     <section
       id="contact"
@@ -171,7 +155,9 @@ export function ContactSection() {
             className="lg:col-span-3">
             
             <form
-              onSubmit={handleSubmit} autoComplete='on'
+              action="https://formspree.io/f/mzdybrgp"
+              method="POST"
+              autoComplete='on'
               className="space-y-6 bg-slate-900 p-8 rounded-2xl border border-slate-800">
               
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -257,16 +243,8 @@ export function ContactSection() {
 
               <button
                 type="submit"
-                disabled={isSubmitting}
-                className="w-full bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-semibold py-4 rounded-lg transition-colors disabled:opacity-70 disabled:cursor-not-allowed flex items-center justify-center gap-2">
-                
-                {isSubmitting ?
-                <span className="w-5 h-5 border-2 border-slate-950 border-t-transparent rounded-full animate-spin" /> :
-                isSubmitted ? "Sending..."
-                  :
-
-                'Send Message'
-                }
+                className="w-full bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-semibold py-4 rounded-lg transition-colors flex items-center justify-center gap-2">
+                Send Message
               </button>
             </form>
           </motion.div>
