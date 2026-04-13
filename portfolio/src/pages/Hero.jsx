@@ -9,24 +9,24 @@ export function HeroSection() {
       id="home"
       className="relative min-h-screen flex items-center justify-center pt-20 overflow-hidden"
     >
-      {/* Background effects */}
+     
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-slate-900 via-slate-950 to-slate-950 -z-10" />
       <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-emerald-500/10 rounded-full blur-[120px] -z-10" />
       <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-cyan-500/10 rounded-full blur-[120px] -z-10" />
 
       <div className="max-w-7xl mx-auto px-6 md:px-12 flex flex-col items-center text-center z-10">
 
-        {/* PROFILE IMAGE SECTION */}
+       
         <motion.div
           initial={{ opacity: 0, scale: 0.6 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.6 }}
           className="relative mb-10"
         >
-          {/* Glow ring */}
+          
           <div className="absolute inset-0 rounded-full bg-gradient-to-tr from-emerald-400 to-cyan-400 blur-2xl opacity-40 animate-pulse" />
 
-          {/* Floating animation wrapper */}
+          
           <motion.div
             animate={{ y: [0, -8, 0] }}
             transition={{
@@ -36,7 +36,7 @@ export function HeroSection() {
             }}
             className="relative"
           >
-            {/* Image container */}
+           
             <div className="w-44 h-44 md:w-56 md:h-56 lg:w-60 lg:h-60 rounded-full p-1 bg-gradient-to-tr from-emerald-400 to-cyan-400 shadow-2xl">
               <img
                 src={profileImg}
@@ -46,7 +46,7 @@ export function HeroSection() {
             </div>
           </motion.div>
 
-          {/* Availability badge */}
+         
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -58,7 +58,7 @@ export function HeroSection() {
           </motion.div>
         </motion.div>
 
-        {/* NAME */}
+       
         <motion.h1
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -68,7 +68,7 @@ export function HeroSection() {
           Hi, I'm <span className="text-gradient">Hansi Tharaki</span>
         </motion.h1>
 
-        {/* TITLE */}
+       
         <motion.h2
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -78,7 +78,7 @@ export function HeroSection() {
           Full Stack Developer | SE Undergraduate
         </motion.h2>
 
-        {/* DESCRIPTION */}
+        
         <motion.p
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -90,7 +90,7 @@ export function HeroSection() {
           make a difference.
         </motion.p>
 
-        {/* BUTTONS */}
+        
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}

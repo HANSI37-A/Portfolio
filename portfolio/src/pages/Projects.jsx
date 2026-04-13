@@ -13,30 +13,30 @@ const projects = [
   featured: true
 },
 {
-  title: 'Task Management App',
+  title: 'Book Fair Stall Booking System (Group Project)',
   description:
-  'A collaborative project management tool featuring real-time updates, drag-and-drop kanban boards, and role-based access control.',
-  tech: ['TypeScript', 'Express', 'PostgreSQL', 'Socket.io'],
-  github: '#',
+  'A web application for managing stall bookings at a book fair, allowing organizers to track reservations and vendors to manage their stalls.',
+  tech: ['JavaScript', 'Java', 'HTML', 'CSS'],
+  github: 'https://github.com/HANSI37-A/ReserveX',
   live: '#',
   featured: true
 },
 {
-  title: 'Weather Dashboard',
+  title: 'Online Bookstore (Group Project)',
   description:
-  'A responsive weather application that provides real-time forecasts, interactive maps, and historical weather data visualization.',
-  tech: ['React', 'Tailwind CSS', 'OpenWeather API', 'Recharts'],
-  github: '#',
-  live: '#',
+  'A responsive e-bookstore application that allows users to browse, search, and purchase digital books.',
+  tech: ['HTML', 'CSS', 'JavaScript', 'PHP'],
+  github: 'https://github.com/BookNest-2025/readify',
+  live: 'https://redify.infinityfree.me',
   featured: false
 },
 {
-  title: 'Portfolio Website',
+  title: 'Movie Website',
   description:
-  'A modern, responsive personal portfolio website built with React and Framer Motion to showcase my projects and skills.',
-  tech: ['React', 'Framer Motion', 'Tailwind CSS'],
-  github: '#',
-  live: '#',
+  'A modern, responsive movie information website built with React.',
+  tech: ['React','CSS'],
+  github: 'https://github.com/HANSI37-A/movieWorld',
+  live: 'https://movie-world-sigma.vercel.app/',
   featured: false
 }];
 

@@ -171,7 +171,7 @@ export function SkillsSection() {
                         ease: "easeInOut"
                       }}
                     >
-                      <skill.icon className="text-lg" />
+                      <skill.icon className="text-lg"/>
                     </motion.div>
                     {skill.name}
                   </motion.span>
