@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { MenuIcon, XIcon } from 'lucide-react';
+import { MenuIcon, XIcon, Moon, Sun } from 'lucide-react';
+import { useTheme } from '../context/ThemeContext';
 const navLinks = [
 {
   name: 'Home',
@@ -26,6 +27,7 @@ const navLinks = [
 export default function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const { isDarkMode, toggleTheme } = useTheme();
   useEffect(() => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 50);
@@ -63,16 +65,31 @@ export default function Navbar() {
             
             Hire Me
           </a>
+          <button
+            onClick={toggleTheme}
+            className="ml-4 p-2 rounded-full bg-slate-800/80 border border-slate-700 text-yellow-400 hover:text-yellow-300 dark:text-emerald-400 dark:hover:text-emerald-300 transition-all shadow-sm"
+            aria-label="Toggle theme"
+          >
+            {isDarkMode ? <Sun size={20} /> : <Moon size={20} />}
+          </button>
         </nav>
 
-      
-        <button
-          className="md:hidden text-slate-300 hover:text-white z-50"
-          onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-          aria-label="Toggle menu">
-          
-          {isMobileMenuOpen ? <XIcon size={24} /> : <MenuIcon size={24} />}
-        </button>
+        <div className="flex items-center gap-4 md:hidden z-50">
+          <button
+            onClick={toggleTheme}
+            className="text-yellow-400 hover:text-yellow-300 dark:text-emerald-400 dark:hover:text-emerald-300 transition-colors"
+            aria-label="Toggle theme"
+          >
+            {isDarkMode ? <Sun size={24} /> : <Moon size={24} />}
+          </button>
+          <button
+            className="text-slate-300 hover:text-white"
+            onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+            aria-label="Toggle menu">
+            
+            {isMobileMenuOpen ? <XIcon size={24} /> : <MenuIcon size={24} />}
+          </button>
+        </div>
 
       
         <AnimatePresence>

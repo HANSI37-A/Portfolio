@@ -11,13 +11,45 @@
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  @apply bg-[#0a0a0b] text-white;
+  @apply bg-[#0a0a0b] text-white transition-colors duration-300;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+/* Light Mode Overrides for existing utility classes */
+html.light body {
+  @apply bg-slate-50 text-slate-900;
+}
+
+html.light .bg-\[\#0a0a0b\] { background-color: #f8fafc !important; }
+html.light .bg-\[\#0a0a0b\]\/90 { background-color: rgba(248, 250, 252, 0.9) !important; }
+html.light .text-white { color: #0f172a !important; }
+
+/* Backgrounds */
+html.light .bg-slate-900 { background-color: #ffffff !important; }
+html.light .bg-slate-900\/30 { background-color: rgba(255, 255, 255, 0.5) !important; }
+html.light .bg-slate-950 { background-color: #f1f5f9 !important; }
+html.light .bg-slate-800 { background-color: #e2e8f0 !important; }
+html.light .bg-slate-800\/50 { background-color: rgba(226, 232, 240, 0.5) !important; }
+
+/* Text Colors */
+html.light .text-slate-400 { color: #475569 !important; }
+html.light .text-slate-300 { color: #334155 !important; }
+html.light .text-slate-500 { color: #64748b !important; }
+
+/* Borders */
+html.light .border-slate-800 { border-color: #cbd5e1 !important; }
+html.light .border-slate-800\/50 { border-color: rgba(203, 213, 225, 0.5) !important; }
+html.light .border-slate-700 { border-color: #94a3b8 !important; }
+html.light .border-white\/10 { border-color: rgba(0, 0, 0, 0.1) !important; }
+
+/* Gradients */
+html.light .from-slate-900 { --tw-gradient-from: #f8fafc var(--tw-gradient-from-position) !important; --tw-gradient-to: rgba(248, 250, 252, 0) var(--tw-gradient-to-position) !important; --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to) !important; }
+html.light .via-slate-950 { --tw-gradient-to: rgba(241, 245, 249, 0)  var(--tw-gradient-to-position) !important; --tw-gradient-stops: var(--tw-gradient-from), #f1f5f9 var(--tw-gradient-via-position), var(--tw-gradient-to) !important; }
+html.light .to-slate-950 { --tw-gradient-to: #f1f5f9 var(--tw-gradient-to-position) !important; }
 
 }
 
