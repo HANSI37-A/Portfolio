@@ -1,7 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { Download, ArrowRight } from "lucide-react";
-import profileImg from "../assets/image.jpg";
+import profileImg from "../assets/me.jpg";
 
 export function HeroSection() {
   return (
