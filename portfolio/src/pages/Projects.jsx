@@ -149,7 +149,7 @@ export function ProjectsSection() {
           className="mt-16 text-center">
           
           <a
-            href="#"
+            href="https://github.com/HANSI37-A"
             className="inline-flex items-center gap-2 text-emerald-400 hover:text-emerald-300 font-medium transition-colors">
             
             View Full Archive <ExternalLink size={16} />
