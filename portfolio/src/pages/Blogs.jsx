@@ -6,14 +6,14 @@ import { FaMediumM } from 'react-icons/fa';
 const mockBlogs = [
   {
     id: 1,
-    title: "Understanding React Server Components",
+    title: "A Beginner-to-Advanced Guide (Including Old vs New React)",
     brief: "Dive deep into the new paradigm of React Server Components and learn how they fundamentally change the way we build React applications.",
     image: "https://images.unsplash.com/photo-1633356122544-f134324a6cee?q=80&w=800&auto=format&fit=crop",
-    date: "April 18, 2026",
-    readTime: "5 min read",
+    date: "April 19, 2026",
+    readTime: "3 min read",
     categories: ["React", "Architecture"],
     featured: true,
-    mediumUrl: "https://medium.com/@yourusername/react-server-components"
+    mediumUrl: "https://medium.com/@tharaki115h/react-js-a-beginner-to-advanced-guide-including-old-vs-new-react-7e69fa4821e1"
   },
   {
     id: 2,
@@ -54,10 +54,10 @@ const mockBlogs = [
     brief: "Exploring the new metrics and tools shaping the landscape of web performance optimization.",
     image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=800&auto=format&fit=crop",
     date: "December 05, 2025",
-    readTime: "7 min read",
+    readTime: "3 min read",
     categories: ["Performance", "Frontend"],
     featured: false,
-    mediumUrl: "https://medium.com/@yourusername/web-performance"
+    mediumUrl: "https://medium.com/@tharaki115h/building-operating-system-hansos-d5cc801f7bdb"
   }
 ];
 
@@ -65,13 +65,13 @@ export function BlogsSection() {
   const [searchQuery, setSearchQuery] = useState('');
   const [selectedCategory, setSelectedCategory] = useState('All');
 
-  // Extract all unique categories
+  
   const categories = ['All', ...new Set(mockBlogs.flatMap(blog => blog.categories))];
 
-  // Filter out featured if it's going to be shown separately
+ 
   const featuredPost = mockBlogs.find(blog => blog.featured);
 
-  // Apply filters and search
+  
   const filteredBlogs = mockBlogs.filter(blog => {
     const matchesSearch = blog.title.toLowerCase().includes(searchQuery.toLowerCase()) || 
                           blog.brief.toLowerCase().includes(searchQuery.toLowerCase());
@@ -79,7 +79,7 @@ export function BlogsSection() {
     return matchesSearch && matchesCategory;
   });
 
-  // If we are showing regular grid (not searching), exclude the featured post from the grid
+  
   const displayBlogs = (searchQuery === '' && selectedCategory === 'All') 
     ? filteredBlogs.filter(blog => blog.id !== featuredPost?.id) 
     : filteredBlogs;
