@@ -52,4 +52,6 @@ html.light .via-slate-950 { --tw-gradient-to: rgba(241, 245, 249, 0)  var(--tw-g
 html.light .to-slate-950 { --tw-gradient-to: #f1f5f9 var(--tw-gradient-to-position) !important; }
 
 }
-
+html {
+  scroll-behavior: smooth;
+}
