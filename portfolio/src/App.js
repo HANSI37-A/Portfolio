@@ -6,7 +6,6 @@ import { SkillsSection } from "./pages/Skills";
 import { ProjectsSection } from "./pages/Projects";
 import { ContactSection } from "./pages/Contact";
 import { Footer } from "./pages/Footer";
-import { BlogsSection } from "./pages/Blogs";
 
 function App() {
   return (
