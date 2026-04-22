@@ -1,13 +1,13 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { 
-  FaReact, FaHtml5, FaNodeJs, FaPython, 
-  FaDocker, FaAws, FaFigma, FaLinux, FaGitAlt, FaServer 
+  FaReact, FaHtml5, FaNodeJs, FaPython, FaAws,
+  FaDocker, FaFigma, FaLinux, FaGitAlt, FaServer 
 } from 'react-icons/fa';
+
 import { 
-  SiTypescript, SiTailwindcss, SiNextdotjs, SiFramer, 
-  SiExpress, SiGraphql, SiMongodb, SiPostgresql, 
-  SiRedis, SiPrisma, SiJest 
+  SiTypescript, SiTailwindcss, SiNextdotjs,
+  SiExpress, SiMongodb, SiPostgresql, SiAmazonaws
 } from 'react-icons/si';
 
 const skillCategories = [
