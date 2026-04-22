@@ -2,6 +2,7 @@ import React from "react";
 import Navbar from "./components/Navbar";
 import { HeroSection } from "./pages/Hero";
 import { AboutSection } from "./pages/About";
+import { EducationSection } from "./pages/Education";
 import { SkillsSection } from "./pages/Skills";
 import { ProjectsSection } from "./pages/Projects";
 import { BlogsSection } from "./pages/Blogs";
@@ -20,6 +21,10 @@ function App() {
 
         <section id="about">
           <AboutSection />
+        </section>
+
+        <section id="education">
+          <EducationSection />
         </section>
 
         <section id="skills">
