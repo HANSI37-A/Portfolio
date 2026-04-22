@@ -9,7 +9,7 @@ export function AboutSection() {
   },
   {
     label: 'Projects Completed',
-    value: '8+'
+    value: '5+'
   },
   {
     label: 'Technologies',
@@ -62,23 +62,13 @@ export function AboutSection() {
             className="space-y-6 text-slate-400 text-lg leading-relaxed">
             
             <p>
-              Hello! I'm Hansi Tharaki, a Software Engineering undergraduate at
-              the University of Kelaniya with a deep passion for building modern
-              web applications. My journey started when I wrote my first lines
-              of code, and since then, I've been fascinated by how software can
-              bring ideas to life.
+             Hello! I'm Hansi Tharaki, a Software Engineering undergraduate at the University of Kelaniya with a strong passion for building modern digital solutions. I enjoy creating websites and web applications using the MERN stack.
             </p>
             <p>
-              Currently, I'm focusing on building accessible, inclusive products
-              and digital experiences. I enjoy bridging the gap between
-              engineering and design - combining my technical knowledge with a
-              keen eye for aesthetics to create beautiful, performant
-              applications.
+              I’m particularly interested in designing user-friendly, accessible, and visually appealing applications. I love combining technical skills with creativity to build products that are both functional and engaging. I also have an interest in mobile app development, especially using Kotlin, and plan to explore it further.
             </p>
             <p>
-              When I'm not at my computer, you can usually find me exploring new
-              technologies, contributing to open-source projects, or
-              collaborating with fellow developers on exciting ideas.
+              Outside of coding, I enjoy exploring new technologies, working on projects, and collaborating with others to turn ideas into real-world applications.
             </p>
 
             <div className="grid grid-cols-3 gap-4 pt-8">
@@ -126,7 +116,7 @@ export function AboutSection() {
                       Frontend
                     </h3>
                     <p className="text-slate-400 text-sm">
-                      React, Vue, Tailwind
+                      React, Tailwind, HTML, CSS
                     </p>
                   </div>
                 </div>
@@ -140,7 +130,7 @@ export function AboutSection() {
                       Backend
                     </h3>
                     <p className="text-slate-400 text-sm">
-                      Node.js, Python
+                      Node.js, Python, Express
                     </p>
                   </div>
                 </div>
