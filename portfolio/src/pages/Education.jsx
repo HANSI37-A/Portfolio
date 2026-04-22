@@ -6,18 +6,17 @@ const educationData = [
   {
     degree: 'BSc (Hons) in Software Engineering',
     institution: 'University of Kelaniya',
-    duration: '2021 – Present',
+    duration: '2023 – Present',
     description: 'Focusing on modern software development practices, web technologies, and software architecture. Engaged in various academic projects emphasizing scalable application design.',
-    highlights: ['Current GPA: 3.8/4.0', 'Dean\'s List 2022', 'Vice President - Software Engineering Student Association'],
     icon: GraduationCap,
     current: true,
   },
   {
     degree: 'GCE Advanced Level',
-    institution: 'Viharamahadevi Balika Vidyalaya',
-    duration: '2018 – 2020',
+    institution: 'H/Walasmulla National School',
+    duration: '2018 – 2022',
     description: 'Physical Science stream. Developed a strong foundation in Mathematics, Physics, and Chemistry, which sparked an interest in analytical problem-solving and logic.',
-    highlights: ['Z-Score: 2.1', 'Distinction in Mathematics'],
+    highlights: ['Z-Score: 1.5209'],
     icon: Award,
     current: false,
   }
@@ -55,13 +54,13 @@ export function EducationSection() {
                 transition={{ duration: 0.5, delay: index * 0.2 }}
                 className="relative group"
               >
-                {/* Timeline Node */}
+                
                 <div className={`absolute -left-[41px] p-2 rounded-full border-2 ${item.current ? 'bg-emerald-500/20 border-emerald-500 text-emerald-400' : 'bg-slate-900 border-slate-700 text-slate-400'} group-hover:scale-110 transition-transform duration-300`}>
                   <Icon size={20} />
                 </div>
 
                 <div className="bg-slate-950/50 border border-slate-800/50 rounded-2xl p-6 md:p-8 hover:border-emerald-500/30 transition-colors backdrop-blur-sm relative overflow-hidden">
-                  {/* Subtle Gradient Background */}
+                 
                   <div className="absolute inset-0 bg-gradient-to-br from-emerald-500/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
                   
                   <div className="relative z-10">
