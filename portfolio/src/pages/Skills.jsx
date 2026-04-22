@@ -18,7 +18,6 @@ const skillCategories = [
       { name: 'TypeScript', icon: SiTypescript },
       { name: 'Tailwind CSS', icon: SiTailwindcss },
       { name: 'Next.js', icon: SiNextdotjs },
-      { name: 'Framer Motion', icon: SiFramer },
       { name: 'HTML/CSS', icon: FaHtml5 }
     ]
   },
@@ -29,7 +28,7 @@ const skillCategories = [
       { name: 'Express', icon: SiExpress },
       { name: 'Python', icon: FaPython },
       { name: 'REST APIs', icon: FaServer },
-      { name: 'GraphQL', icon: SiGraphql }
+    
     ]
   },
   {
@@ -37,8 +36,6 @@ const skillCategories = [
     skills: [
       { name: 'MongoDB', icon: SiMongodb },
       { name: 'PostgreSQL', icon: SiPostgresql },
-      { name: 'Redis', icon: SiRedis },
-      { name: 'Prisma ORM', icon: SiPrisma }
     ]
   },
   {
@@ -48,7 +45,6 @@ const skillCategories = [
       { name: 'Docker', icon: FaDocker },
       { name: 'AWS', icon: FaAws },
       { name: 'Figma', icon: FaFigma },
-      { name: 'Jest', icon: SiJest },
       { name: 'Linux', icon: FaLinux }
     ]
   }
