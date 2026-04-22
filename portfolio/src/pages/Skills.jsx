@@ -7,7 +7,7 @@ import {
 
 import { 
   SiTypescript, SiTailwindcss, SiNextdotjs,
-  SiExpress, SiMongodb, SiPostgresql, SiAmazonaws
+  SiExpress, SiMongodb, SiPostgresql, 
 } from 'react-icons/si';
 
 const skillCategories = [
