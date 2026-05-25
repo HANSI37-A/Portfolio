@@ -3,6 +3,8 @@ import { motion } from "framer-motion";
 import { Download, ArrowRight } from "lucide-react";
 import profileImg from "../assets/me2.jpg";
 
+
+
 export function HeroSection() {
   return (
     <section
@@ -108,10 +110,11 @@ export function HeroSection() {
             />
           </a>
 
-          <a
-            href="/cv.pdf"
-            className="px-8 py-4 rounded-full bg-slate-800/50 hover:bg-slate-800 border border-slate-700 text-white font-medium transition-all flex items-center justify-center gap-2 group"
-          >
+           <a
+              href="/Hansi_Tharaki_Randima.pdf"
+              download="Hansi_Tharaki_Randima.pdf"
+              className="px-8 py-4 rounded-full bg-slate-800/50 hover:bg-slate-800 border border-slate-700 text-white font-medium transition-all flex items-center justify-center gap-2 group"
+            >
             <Download
               size={18}
               className="group-hover:-translate-y-1 transition-transform"
