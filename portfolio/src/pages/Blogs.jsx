@@ -20,11 +20,11 @@ const mockBlogs = [
     title: "Securing MERN Stack Applications",
     brief: "A comprehensive guide on the best practices for implementing security across MongoDB, Express, React, and Node.js.",
     image: "https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?q=80&w=800&auto=format&fit=crop",
-    date: "March 12, 2026",
-    readTime: "8 min read",
+    date: "June 10, 2026",
+    readTime: "4 min read",
     categories: ["MERN", "Security"],
-    featured: false,
-    mediumUrl: "https://medium.com/@yourusername/securing-mern-stack"
+    featured: true,
+    mediumUrl: "https://medium.com/@tharaki115h/securing-mern-stack-applications-best-practices-for-mongodb-express-react-and-node-js-f498b948af72"
   },
   {
     id: 3,
@@ -35,7 +35,7 @@ const mockBlogs = [
     readTime: "6 min read",
     categories: ["Security", "Backend"],
     featured: false,
-    mediumUrl: "https://medium.com/@yourusername/jwt-demystified"
+    mediumUrl: "https://medium.com/@tharaki115h/jwt-demystified"
   },
   {
     id: 4,
