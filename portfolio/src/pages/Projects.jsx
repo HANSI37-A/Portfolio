@@ -4,12 +4,12 @@ import { ExternalLink, Folder } from 'lucide-react';
 import { FaGithub } from 'react-icons/fa';
 const projects = [
 {
-  title: 'E-Commerce Platform',
+  title: 'Nestora E-Commerce Platform',
   description:
-  'A full-stack e-commerce solution with user authentication, product management, shopping cart, and Stripe payment integration.',
+  'A premium MERN-stack furniture e-commerce platform that combines minimalist design with advanced administrative functionality. It features an immersive 3D product visualizer for multi-angle material inspection, automated vendor and designer management pipelines, and a secure checkout system engineered for high-end home, workspace, and outdoor collections.',
   tech: ['React', 'Node.js', 'MongoDB', 'Redux', 'Tailwind'],
-  github: '#',
-  live: '#',
+  github: 'https://github.com/HANSI37-A/Nestora',
+  live: 'https://furniture-nestorafront.vercel.app',
   featured: true
 },
 {

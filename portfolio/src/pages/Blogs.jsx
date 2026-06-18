@@ -31,11 +31,11 @@ const mockBlogs = [
     title: "Demystifying JSON Web Tokens (JWT)",
     brief: "Learn the robust mechanics behind JWTs, how they enable stateless authentication, and the best ways to store them securely.",
     image: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=800&auto=format&fit=crop",
-    date: "February 28, 2026",
-    readTime: "6 min read",
+    date: "June 18, 2026",
+    readTime: "3 min read",
     categories: ["Security", "Backend"],
-    featured: false,
-    mediumUrl: "https://medium.com/@tharaki115h/jwt-demystified"
+    featured: true,
+    mediumUrl: "https://medium.com/@tharaki115h/jwts-demystified-how-they-work-and-where-to-safely-store-them-147a6c3bd29b"
   },
   {
     id: 4,
